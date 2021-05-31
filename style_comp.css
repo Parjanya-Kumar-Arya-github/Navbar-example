@@ -1,0 +1,277 @@
+@media (min-width: 1180px) {
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Farro:wght@500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    @keyframes anim {
+        0% {
+            background: linear-gradient( white 100%, rgb(216, 30, 216) 0%);
+        }
+        100% {
+            background: linear-gradient( white 0%, rgb(216, 30, 216) 100%);
+        }
+    }
+    * {
+        padding: 0;
+        margin: 0;
+        /* background-color: aliceblue; */
+    }
+    body {
+        background-color: aliceblue;
+    }
+    .hamburger {
+        display: none;
+    }
+    .nav_bar {
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_bar .logo img {
+        float: left;
+    }
+    .nav_bar .logo h2 {
+        padding: 0px -10px 10px 10px;
+        position: relative;
+        font-size: 40px;
+        font-weight: 700;
+        font-family: 'Anton', 'Farro', sans-serif;
+    }
+    a {
+        text-decoration: none;
+    }
+    .logo {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        left: 50px;
+    }
+    .nav_bar ol {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        right: 25px;
+        vertical-align: end;
+        /* top: 50px; */
+        /* height: 9%; */
+        padding: 10px 10px 10px 10px;
+    }
+    .nav_bar ol li {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px 20px 20px 20px;
+        /* height: 100%; */
+        font-family: 'Poppins', sans-serif;
+    }
+    ol li:nth-child(3n) a {
+        color: rgb(97, 198, 231);
+    }
+    ol li:nth-child(4n) a {
+        color: rgb(236, 32, 100);
+    }
+    ol li:nth-child(1) a {
+        color: rgb(64, 196, 71);
+    }
+    ol li:nth-child(7) a {
+        color: rgb(64, 196, 71);
+    }
+    ol li:nth-child(2) a {
+        color: rgb(216, 30, 216);
+    }
+    ol li:nth-child(5) a {
+        color: rgb(252, 180, 46);
+    }
+    /* Hover */
+    .underline {
+        height: 5px;
+        border-radius: 3px;
+        background-color: transparent;
+        width: 0%;
+        transition: width 0.4s, background-color 1s;
+        position: relative;
+        top: 35px;
+    }
+    ol li:nth-child(3n):hover .underline {
+        background-color: rgb(97, 198, 231);
+        width: 100%;
+    }
+    ol li:nth-child(4n):hover .underline {
+        background-color: rgb(236, 32, 100);
+        width: 100%;
+    }
+    ol li:nth-child(10):hover .underline {
+        background-color: rgb(92, 10, 92);
+        width: 100%;
+    }
+    ol li:nth-child(1):hover .underline {
+        background-color: rgb(64, 196, 71);
+        width: 100%;
+    }
+    ol li:nth-child(7):hover .underline {
+        background-color: rgb(64, 196, 71);
+        width: 100%;
+    }
+    ol li:nth-child(2):hover .underline {
+        background-color: rgb(216, 30, 216);
+        width: 100%;
+    }
+    ol li:nth-child(5):hover .underline {
+        background-color: rgb(252, 180, 46);
+        width: 100%;
+    }
+    /* Active */
+    ol li:nth-child(3n) a.active {
+        border: 5px solid;
+        border-radius: 5px;
+        border-width: 110%;
+        padding-bottom: 36px;
+        border-color: transparent;
+        background-color: transparent;
+        /* position: relative; */
+        /* top: 35px; */
+        border-bottom-color: rgb(97, 198, 231);
+    }
+    ol li:nth-child(4n) a.active {
+        border: 5px solid;
+        border-radius: 5px;
+        border-width: 110%;
+        padding-bottom: 36px;
+        border-color: transparent;
+        background-color: transparent;
+        /* position: relative; */
+        /* top: 35px; */
+        border-bottom-color: rgb(236, 32, 100);
+    }
+    ol li:nth-child(1) a.active {
+        /* border: 5px 7px; */
+        border: 5px solid;
+        border-radius: 5px;
+        border-width: 110%;
+        padding-bottom: 36px;
+        border-color: transparent;
+        background-color: transparent;
+        /* position: relative; */
+        /* top: 35px; */
+        border-bottom-color: rgb(64, 196, 71)
+    }
+    ol li:nth-child(7) a.active {
+        border: 5px solid;
+        border-radius: 5px;
+        border-width: 110%;
+        padding-bottom: 36px;
+        border-color: transparent;
+        background-color: transparent;
+        /* position: relative; */
+        /* top: 35px; */
+        border-bottom-color: rgb(64, 196, 71);
+    }
+    ol li:nth-child(2) a.active {
+        border: 5px solid;
+        border-radius: 5px;
+        border-width: 110%;
+        padding-bottom: 36px;
+        border-color: transparent;
+        background-color: transparent;
+        /* position: relative; */
+        /* top: 35px; */
+        border-bottom-color: rgb(216, 30, 216);
+    }
+    ol li:nth-child(5) a.active {
+        border: 5px solid;
+        border-radius: 5px;
+        border-width: 110%;
+        padding-bottom: 36px;
+        border-color: transparent;
+        background-color: transparent;
+        /* position: relative; */
+        /* top: 35px; */
+        border-bottom-color: rgb(252, 180, 46);
+    }
+    /* Dropdown About*/
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        top: 105%;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    hr {
+        opacity: 0.5;
+        background-color: rgba(173, 169, 169, 0.1);
+    }
+    .dropdown-content a {
+        color: rgb(216, 30, 216);
+        font-family: 'Poppins', 'Arial';
+        font-size: 17px;
+        padding: 12px 30px;
+        text-decoration: none;
+        text-align: left;
+        display: block;
+        white-space: nowrap;
+        position: relative;
+        transition: all .6s ease-out;
+    }
+    ol li:nth-child(n):hover .dropdown-content {
+        display: block;
+    }
+    ol li:nth-child(2) .dropdown-content .element {
+        background: linear-gradient(to right, rgb(216, 30, 216) 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+    }
+    ol li:nth-child(n):hover .dropdown-content .element:hover {
+        /* background-color: rgb(216, 30, 216); */
+        background-position: left bottom;
+        color: #fff;
+    }
+    .dropdown-content a:hover {
+        color: white;
+    }
+    ol li:nth-child(3) .dropdown-content .element {
+        background: linear-gradient(to right, rgb(97, 198, 231) 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+    }
+    ol li:nth-child(4) .dropdown-content .element {
+        background: linear-gradient(to right, rgb(236, 32, 100) 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+    }
+    ol li:nth-child(5) .dropdown-content .element {
+        background: linear-gradient(to right, rgb(252, 180, 46) 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+    }
+    ol li:nth-child(6) .dropdown-content .element {
+        background: linear-gradient(to right, rgb(97, 198, 231) 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+    }
+    ol li:nth-child(7) .dropdown-content .element {
+        background: linear-gradient(to right, rgb(64, 196, 71) 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+    }
+    .rule {
+        display: none;
+    }
+    .cross {
+        display: none;
+    }
+}
