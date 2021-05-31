@@ -87,6 +87,9 @@
     ol li:nth-child(5) a {
         color: rgb(252, 180, 46);
     }
+    ol li:nth-child(10) a {
+        color: rgb(92, 10, 92);
+    }
     /* Hover */
     .underline {
         height: 5px;
@@ -264,6 +267,24 @@
     }
     ol li:nth-child(7) .dropdown-content .element {
         background: linear-gradient(to right, rgb(64, 196, 71) 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+    }
+    ol li:nth-child(9) .dropdown-content .element {
+        background: linear-gradient(to right, rgb(97, 198, 231) 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+    }
+    ol li:nth-child(8) .dropdown-content .element {
+        background: linear-gradient(to right, rgb(236, 32, 100) 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+    }
+    ol li:nth-child(10) .dropdown-content .element {
+        background: linear-gradient(to right, rgb(92, 10, 92) 50%, white 50%);
         background-size: 200% 100%;
         background-position: right bottom;
         transition: all .5s ease-out;
